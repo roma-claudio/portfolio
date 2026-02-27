@@ -93,7 +93,14 @@
           }
         },
         "deploy": {
-          "builder": "angular-cli-ghpages:deploy"
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "baseHref": "/portfolio/",
+            "branch": "gh-pages",
+            "repo": "https://github.com/roma-claudio/portfolio.git",
+            "name": "github-actions[bot]",
+            "email": "41898282+github-actions[bot]@users.noreply.github.com"
+          }
         }
       }
     }
